@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.my-background {
+    background-image: url(/images/scorpio\ black\ background.jpg);
+    background-size: cover;
+    color: rgb(124, 124, 232);
+    font-family: 'Kaushan Script', cursive;
+    padding: 16px;
+}
+
+.nav-hover {
+    float: right;
+   
+}
+
+
+.nav-hover:hover {
+    padding: 14px 16px;
+    margin: 2px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: black;
+    color: red;
+    overflow: hidden;
+
+a {
+    cursor: pointer;
+    
+}
