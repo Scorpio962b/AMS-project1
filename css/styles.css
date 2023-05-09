@@ -3,18 +3,12 @@
 .my-background {
     background-image: url(/images/scorpio\ black\ background.jpg);
     background-size: cover;
-    color: rgb(124, 124, 232);
+    color: white;
     font-family: 'Kaushan Script', cursive;
     padding: 16px;
 }
 
-.nav-hover {
-    float: right;
-   
-}
-
-
-.nav-hover:hover {
+/* .nav-hover:hover {
     padding: 14px 16px;
     margin: 2px;
     display: block;
@@ -24,8 +18,75 @@
     background-color: black;
     color: red;
     overflow: hidden;
+}
 
 a {
     cursor: pointer;
     
+} */
+
+.transparent-white {
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
+
+/* flipcard */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.icons i {
+    font-size: 6rem;
+}
+
+i:hover {
+    background-color: aqua;
+    padding: 5px;
+}
+
+/* .example {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer ul {
+    list-style: none;
+    display: flex;
+  } */
