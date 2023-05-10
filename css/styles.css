@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 .my-background {
-    background-image: url(/images/scorpio\ black\ background.jpg);
-    background-size: cover;
+    background-image: url(/images/guille-pozzi-sbcIAn4Mn14-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
     color: white;
     font-family: 'Kaushan Script', cursive;
-    padding: 16px;
+    /* padding: 16px; */
+    
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* .nav-hover:hover {
@@ -26,7 +33,7 @@ a {
 } */
 
 .transparent-white {
-    background-color: rgba(255, 255, 255, 0.5) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* flipcard */
@@ -72,13 +79,62 @@ a {
     transform: rotateY(180deg);
 }
 
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+  }
+  
+  .about-grid>* {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* padding: 5px; */
+  }
+  .about-grid img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .b1 {
+    grid-area: span 2/ span 1;
+  }
+  
+  .b2 {
+    grid-area: span 1/ span 1;
+  }
+  
+  .b3 {
+    grid-area: span 1/ span 2;
+  }
+  
+  .b4 {
+    grid-area: span 1/ span 2;
+  }
+  
+  .b5 {
+    grid-area: span 2/ span 1;
+  }
+  
+  .b6 {
+    grid-area: span 1/ span 2;
+  }
+  
+  .b7 {
+    grid-area: span 1/ span 1;
+  }
+    
 .icons i {
-    font-size: 6rem;
+    font-size: 30px;
 }
 
 i:hover {
     background-color: aqua;
     padding: 5px;
+}
+
+footer {
+    z-index: 5;
+    padding: 30px;
 }
 
 /* .example {
@@ -90,3 +146,30 @@ i:hover {
     list-style: none;
     display: flex;
   } */
+
+ 
+.typewriter h4 {
+    color: #fff;
+  
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  }
