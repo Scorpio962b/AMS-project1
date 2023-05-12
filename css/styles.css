@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@1,300&display=swap');
 
 /*  */
 .my-background {
   height: 50vh;
-  background-image: url(/images/guille-pozzi-sbcIAn4Mn14-unsplash.jpg);
+  background-image: url(./../images/guille-pozzi-sbcIAn4Mn14-unsplash.jpg);
   background-position: center;
   background-size: cover;
   color: white;
-  font-family: 'Kaushan Script', cursive;
-
   /* padding: 16px; */
+
+}
+
+.default-font {
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
 }
 
 /* navbar start */
@@ -89,10 +93,11 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-gap: 10px;
+ 
 }
 
 .about-grid>* {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.219);
   /* padding: 5px; */
 }
 
@@ -101,32 +106,43 @@ a {
   height: 100%;
 }
 
+.skills-margin {
+  margin-top: 20px;
+  height: 50px;
+}
 .b1 {
   grid-area: span 2/ span 1;
+  padding: 10px;
 }
 
 .b2 {
   grid-area: span 1/ span 1;
+  padding: 10px;
 }
 
 .b3 {
   grid-area: span 1/ span 2;
+  padding: 10px;
 }
 
 .b4 {
   grid-area: span 1/ span 2;
+  padding: 10px;
 }
 
 .b5 {
   grid-area: span 2/ span 1;
+  padding: 10px;
 }
 
 .b6 {
   grid-area: span 1/ span 2;
+  padding: 10px;
 }
 
 .b7 {
   grid-area: span 1/ span 1;
+  padding: 10px;
 }
 
 /* about end */
@@ -162,7 +178,6 @@ footer {
   
   .typewriter h4 {
   color: #fff;
-  font-family: monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
@@ -175,7 +190,7 @@ footer {
   /* Adjust as needed */
   animation:
     typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    blink-caret .4s step-end infinite;
 }
 
 
@@ -231,7 +246,7 @@ input, textarea {
 
 /*------ MEDIA QUERIES -----*/ 
 
-@media  (max-width:990px) {
+@media  (max-width:700px) and (min-width: 350px) {
 
     .nav-brand img {
      width:20%;
@@ -240,10 +255,5 @@ input, textarea {
    nav   .nav-item.nav-link {
       color:black ;
     }
-  .navbar {
-    background-color: aqua;
-  }
-
-
-  
+ 
 }
